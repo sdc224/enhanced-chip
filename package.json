@@ -1,0 +1,74 @@
+{
+	"name": "enhanced-chip",
+	"version": "1.0.0",
+	"description": "An Enhanced Chip Component based on MUI",
+	"main": "dist/index.js",
+	"files": [
+		"dist"
+	],
+	"types": "./dist/index.d.ts",
+	"keywords": [
+		"chip",
+		"material-ui",
+		"react"
+	],
+	"author": {
+		"name": "Sourodeep Chatterjee",
+		"email": "sourodeep224@outlook.com",
+		"url": "https://github.com/sdc224"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sdc224/enhanced-chip.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sdc224/enhanced-chip/issues"
+	},
+	"homepage": "https://github.com/sdc224/enhanced-chip#readme",
+	"license": "MIT",
+	"scripts": {
+		"serve": "cross-env webpack-dev-server --mode development",
+		"watch": "cross-env NODE_ENV=development rollup -c -w",
+		"build": "cross-env NODE_ENV=production rollup -c",
+		"test": "mocha -r ts-node/register test/setup.ts test/*.test.*"
+	},
+	"devDependencies": {
+		"@material-ui/core": "^3.6.2",
+		"@material-ui/icons": "^3.0.2",
+		"@types/chai": "^4.2.12",
+		"@types/enzyme": "^3.10.5",
+		"@types/enzyme-adapter-react-16": "^1.0.6",
+		"@types/mocha": "^5.2.7",
+		"@types/react": "^16.9.46",
+		"@types/react-dom": "^16.9.8",
+		"@types/sinon": "^7.5.2",
+		"awesome-typescript-loader": "^5.2.1",
+		"chai": "^4.2.0",
+		"cross-env": "^6.0.3",
+		"enzyme": "^3.11.0",
+		"enzyme-adapter-react-16": "^1.15.3",
+		"eslint": "^6.8.0",
+		"jsdom": "^15.2.1",
+		"jsdom-global": "^3.0.2",
+		"mocha": "^6.2.3",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"rollup": "^1.32.1",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-typescript": "^1.0.1",
+		"rollup-plugin-uglify": "^6.0.4",
+		"sinon": "^7.5.0",
+		"source-map-loader": "^0.2.4",
+		"ts-node": "^8.10.2",
+		"typescript": "^3.9.7",
+		"webpack": "^4.44.1",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0"
+	},
+	"peerDependencies": {
+		"@material-ui/core": ">=3.6.2 <5",
+		"@material-ui/icons": ">=3.0.2 <5",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
+}
